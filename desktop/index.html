@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>해피로봇레코드</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="maincss/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- #release slide CSS-->
+    <link rel="stylesheet" type="text/css" href="maincss/slick.css">
+    <link rel="stylesheet" type="text/css" href="maincss/slick-theme.css">
+    <!-- #concert slide CSS -->
+    <link rel="stylesheet" href="maincss/swiper.min.css">
+    <!-- #notice aos CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="mainjs/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--.artistBox images fadeinout-->
+    <script src="mainjs/imgtrans.js"></script>
+    <!--pop up -->
+    <script src="mainjs/mainpopup.js"></script>
+    <!--top btn -->
+    <script src="common/js/easing.js"></script>
+    <script src="common/js/move-top.js"></script>
+    <script src="common/js/slidemove.js"></script>
+</head>
+
+<body>
+    <div id="Wrap">
+        <header id="headerWrap">
+            <div class="headerInner">
+                <div class="headerBox">
+                    <nav id="gnb">
+                        <h1 id="logo">
+                            <a href="index.html"><img src="images/happyrobot/logo_white.png" alt="해피로봇레코드 로고"></a>
+                        </h1>
+                        <ul class="mainMenu">
+                            <li class="depth01 menu01"><a href="sub01_artists/index.html">아티스트</a></li>
+                            <li class="depth01 menu02"><a href="sub03_albums/index.html">앨범</a></li>
+                            <li class="depth01 menu03"><a href="http://newmj12.cafe24.com/g5/bbs/board.php?bo_table=HRR">뉴스</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="#">NOTICE</a></li>
+                                    <li class="subMenu"><a href="#">PRESS</a></li>
+                                    <li class="subMenu"><a href="#">MPMGWEEK</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth01 menu04"><a href="sub06_schedule/index.html">스케줄</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="sub06_schedule/index.html">CONCERT</a></li>
+                                    <li class="subMenu"><a href="sub06_schedule/index.html">CALENDAR</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth01 menu05"><a href="https://smartstore.naver.com/happyrobot_store">스토어</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section id="contentWrap">
+            <div class="contentInner">
+                <article id="main">
+                    <div class="mainBox">
+                        <div class="mainDeco">
+                            <img src="images/design/grad.png" alt="">
+                            <img src="images/design/mainDeco.png" alt="">
+                        </div>
+                        <ul class="artistBox">
+                            <a href="sub01_artists/index1.html">
+                                <li>
+                                    <div class="artistImg">
+                                        <div style="display: block;">
+                                            <img alt="메인이미지1" src="images/artists/artists_main/daybreak.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지2" src="images/artists/artists_main/moment.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지3" src="images/artists/artists_main/kok.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지4" src="images/artists/artists_main/enob.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지5" src="images/artists/artists_main/soran.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지6" src="images/artists/artists_main/yj.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지7" src="images/artists/artists_main/ourR.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지8" src="images/artists/artists_main/lambc.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지9" src="images/artists/artists_main/solutions.jpg">
+                                        </div>
+                                        <div style="display: none;">
+                                            <img alt="메인이미지10" src="images/artists/artists_main/noreply.jpg">
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                        <ul class="mainTxt">
+                            <li><img src="images/design/mainTxt.png" alt="해피로봇레코드"></li>
+                        </ul>
+                    </div>
+                </article>
+                <article id="release">
+                    <div class="releaseBox">
+                        <h1 class="title"><span>NEW</span>RELEASES</h1>
+                        <img class="robotarm" src="images/design/robotarm.png" alt="로봇">
+                        <div class="albums">
+                            <div><a href="sub03_albums/index.html"><img src="images/albums/img_500/bright-_4-cover_500.jpg" alt=""></a><span>민트페이퍼 bright#4</span></div>
+                            <div><a href="sub03_albums/index.html"><img src="images/albums/img_500/DB_DS_hello_500.jpg" alt=""></a><span>daybreak hello</span></div>
+                            <div><a href="sub03_albums/index.html"><img src="images/albums/img_500/dejavu_500.JPG" alt=""></a><span>ENOB Dejavu</span></div>
+                            <div><a href="sub03_albums/index.html"><img src="images/albums/img_500/Green-is-the-new-Black1_500.jpg" alt=""></a><span>LambC Green is the new Black</span></div>
+                            <div><a href="sub03_albums/index.html"><img src="images/albums/img_500/lalasweet_todayweather_500.jpg" alt=""></a><span>랄라스윗 오늘의 날씨 </span></div>
+                            <div><a href="sub03_albums/index.html"><img src="images/albums/img_500/refresh_500.jpg" alt=""></a><span>정유종 refesh</span></div>
+                        </div>
+                        <div class="belt">벨트</div>
+                    </div>
+                </article>
+                <article id="concert">
+                    <div class="concertBox">
+                        <h1 class="title">CONCERT</h1>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="sub06_schedule/index.html"><img src="images/visual/MMT_Connected_banner_1024x478.jpg" alt=""></a></div>
+                                <div class="swiper-slide">
+                                    <a href="sub06_schedule/index.html"><img src="images/visual/LambC_banner_1024x478.jpg" alt=""></a></div>
+                                <div class="swiper-slide">
+                                    <a href="sub06_schedule/index.html"><img src="images/visual/ourr_banner_1024x478.jpg" alt=""></a></div>
+                                <div class="swiper-slide">
+                                    <a href="sub06_schedule/index.html"><img src="images/visual/solutions_banner_1024x478.jpg" alt=""></a></div>
+                                <div class="swiper-slide">
+                                    <a href="sub06_schedule/index.html"><img src="images/visual/SRN_liveSORAN_banner_1024x478.jpg" alt=""></a></div>
+                            </div>
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </article>
+                <article id="notice">
+                    <div class="noticeBox">
+                        <div data-aos="fade-left" class="news">
+                            <figure>
+                                <a href="http://newmj12.cafe24.com/g5/bbs/board.php?bo_table=HRR"><img src="images/press/blueocean_poster.jpg" alt="블루오션 포스터"></a>
+                                <img class="deco01" src="images/design/deco01.png" alt="타이틀 장식이미지">
+                                <figcaption>
+                                    <p class="title">NEWS</p>
+                                    <img src="images/design/dot.png" alt="타이틀 장식 도트">
+                                    <p>해피로봇 레코드 : New wave in BLUE OCEAN 오디션</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div data-aos="fade-up-right" class="sns">
+                            <figure>
+                                <a href="https://www.instagram.com/happy_robot_records/?hl=ko" target="_blank"><img src="images/albums/img_500/refresh_500.jpg" alt="정유종 리프레쉬 앨범커버"></a>
+                                <figcaption>
+                                    <p class="title">SNS</p><img src="images/design/dot.png" alt="타이틀 장식 도트">
+                                    <img src="images/happyrobot/logo_50ox.png" alt="해피로봇레코드SNS프로필"><span>happy_robot_record</span>
+                                </figcaption>
+                            </figure>
+                            <img class="deco02" src="images/design/deco02.png" alt="타이틀 장식이미지">
+                        </div>
+                        <div data-aos="fade-up-left" class="upcoming">
+                            <ul class="month">
+                                <li>DECEMBER</li>
+                            </ul>
+                            <ul class="day">
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li></li>
+                            </ul>
+                            <ul class="events">
+                                <li>고영배(소란) - MC</li>
+                                <li>이원석(데이브레이크) - TV</li>
+                                <li>솔루션스 - CONCERT
+                                    쏜애플 - TV</li>
+                                <li>쏜애플 - LIVE</li>
+                                <li>이원석(데이브레이크) – RADIO</li>
+                                <li><a href="sub06_schedule/index.html">▶ SCHEDULE</a></li>
+                            </ul>
+                            <img class="deco03" src="images/design/deco01.png" alt="타이틀 장식이미">
+                            <p class="title">UPCOMING<span>EVENTS</span></p><img src="images/design/dot.png" alt="타이틀 장식 도트">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <footer id="footerWrap">
+            <div class="footerInner">
+                <div class="footerBox">
+                    <div class="footerLft">
+                        <h4 class="footerLogo">
+                            <a href="index.html"><img src="images/happyrobot/footerLogo.png" alt="푸터로고"></a>
+                        </h4>
+                    </div>
+                    <div class="footerCt">
+                        <address id="contact">
+                            <div class="phoneMail">
+                                <img src="images/icons/contact.svg" alt="">
+                                <p>02-322-5684 / F. 02-322-0015</p>
+                                <p>happyrobotkr@naver.com</p>
+                            </div>
+                            <div class="address">
+                                <img src="images/icons/location.svg" alt="">
+                                <p>서울특별시 마포구 서강로 78<br>엠피엠지 3층 (창전동 13-5)</p>
+                            </div>
+                        </address>
+                        <div class="copyRight">
+                            <p>copyright© 2016 Happy Robot Records All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="footerRht">
+                        <div class="family">
+                            <select onchange="window.open(this.value)">
+                                <option>Family Stie</option>
+                                <option value="http://www.mpmg.co.kr/">MPMG</option>
+                                <option value="https://www.mintpaper.co.kr/festival_gmf/">GMF</option>
+                                <option value="https://www.mintpaper.co.kr/">Mint Paper</option>
+                            </select>
+                        </div>
+                        <div class="snsIcon">
+                            <a href="https://www.facebook.com/HappyRobotRecords" target="_blank">
+                                <img src="images/icons/facebook.png" alt="페이스북아이콘">
+                            </a>
+                            <a href="https://www.instagram.com/happy_robot_records/?hl=ko" target="_blank">
+                                <img src="images/icons/instagram.png" alt="인스타그램아이콘">
+                            </a>
+                            <a href="https://twitter.com/HappyRobotKR" target="_blank">
+                                <img src="images/icons/twitter.png" alt="트위터아이콘">
+                            </a>
+                            <a href="http://www.youtube.com/user/HappyRobotRecords" target="_blank">
+                                <img src="images/icons/youtube.png" alt="유튜브아이콘">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- pop up -->
+        <div id="showimage" style="z-index:99;position:absolute;width:322px;right:500px;top:200px;">
+            <script>
+                function closeWin() {
+                    var chk = document.getElementById('Notice')
+                    if (chk.checked) {
+                        setCookie("Notice", "done", 1); //1일간 안보임을 뜻함
+                    }
+                }
+                if (getCookie("Notice") == "done") {
+                    hidebox();
+                }
+            </script>
+            <div>
+                <img src="images/design/popup.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+            </div>
+            <div style="font-size:14px;text-align:center;color:#fff;">
+                <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이 창을 열지 않음 선택상자">
+                <label for="Notice">오늘은 이 창을 열지 않음</label>
+                <a href="#" onclick="closeWin();hidebox();return false;" style="color:#333; position:absolute; bottom:30px; right: 20px"> [close] </a>
+            </div>
+        </div>
+        
+        <!-- top btn -->
+        <div class="btnTop">
+            <a href="#" id="toTop">
+                <span id="toTopHover">
+                    <img src="images/icons/btnTop.svg" alt="상단으로 이동">
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- albums slickSlide -->
+    <script type="text/javascript" src="mainjs/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.albums').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+            });
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="mainjs/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+
+</body></html>

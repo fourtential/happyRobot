@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HRR - STORE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+    <!-- 숫자인식,메일주소,지도상의 주소링크 막기 -->
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <link rel="stylesheet" href="../common/css/base.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link rel="stylesheet" href="css/filmroll.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <!-- 아이폰 북마크 추가시 바탕화면에서 보이는 아이콘이미지-->
+    <link rel="apple-touch-icon" href="../favicon.ico">
+
+    <script src="../mainjs/jquery-3.4.1.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.js"></script>
+    <script src="../common/js/gnb.js"></script>
+    <script src="js/jquery.filmroll.js"></script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#headerWrap" class="hidden">네비게이션바로가기</a>
+        <a href="#contentWrap" class="hidden">컨텐츠바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="headerWrap">
+            <div class="headerInner">
+                <div class="headerBox">
+                    <nav class="menu-opener">
+                        <div class="menu-opener-inner"></div>
+                    </nav>
+                    <div class="menu">
+                        <ul class="menu-inner">
+                            <a href="../subArtist/index1-1.html" class="menu-link">
+                                <li>ARTISTS</li>
+                            </a>
+                            <a href="../subAlbum/index2-1.html" class="menu-link">
+                                <li>ALBUMS</li>
+                            </a>
+                            <a href="http://newmj12.cafe24.com/g5/bbs/board.php?bo_table=hrrNoticem" class="menu-link">
+                                <li>NEWS</li>
+                            </a>
+                            <a href="../subSchedule/index4-1.html" class="menu-link">
+                                <li>SCHEDULE</li>
+                            </a>
+                            <a href="../subStore/index5-1.html" class="menu-link">
+                                <li>STORE</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <h1 id="logo">
+                        <a href="../index.html"><span>해피로봇레코드 로고</span></a>
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <div class="scheduleWrap">
+        <h2>SCHEDULE</h2>
+        <section id="poster">
+        <h3>CONCERT</h3>
+            <!--film_roll jquery-->
+            <div id="film_roll">
+                <div>
+                    <a href="#"><img src="images/dbConcert.jpg" alt="데이브레이크 콘서트 포스터"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="images/kxleeConcert.jpg" alt="이수륜 콘서트 포스터"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="images/latConcert.jpg" alt="라이프앤타임 콘서트 포스터"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="images/lmcConcert.jpg" alt="램씨 콘서트 포스터"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="images/sltnConcert.jpg" alt="솔루션스 콘서트 포스"></a>
+                </div>
+            </div>
+        </section>
+        <section id="events">
+        <h3>EVENTS</h3>
+            <div id="caleandar"></div>
+            <p><i class="fas fa-circle" style="color:#f3b522"></i> today  <i class="far fa-circle" style="color:#999"></i> event</p>
+            <script type="text/javascript" src="js/caleandar.js"></script>
+            <script type="text/javascript" src="js/demo.js"></script>
+        </section>
+        </div>
+
+        <footer id="footerWrap">
+            <div class="footerInner">
+                <div class="sns">
+                    <a href="https://twitter.com/HappyRobotKR" target="_blank">트위터</a>
+                    <a href="https://www.facebook.com/HappyRobotRecords" target="_blank">페이스북</a>
+                    <a href="https://www.instagram.com/happy_robot_records/?hl=ko" target="_blank">인스타그램</a>
+                    <a href="http://www.youtube.com/user/HappyRobotRecords" target="_blank">유튜브</a>
+                </div>
+                <div class="footerLogo">
+                    <p>행복한 음악을 전하는</p>
+                    <span>해피로봇레코드 텍스트로고</span>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>02-322-5684</li>
+                        <li>Mapo-gu, Seoul</li>
+                        <li>happyrobotkr@naver.com</li>
+                    </ul>
+                </div>
+                <p>© Happy Robot Records 2016 All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!--filmroll js-->
+    <script>
+        $(function() {
+            fr = new FilmRoll({
+                container: '#film_roll',
+                height: 330
+            });
+        });
+    </script>
+
+    <!--    Loading Failure (e.g. on iOS 8)-->
+    <script>
+        var film_roll = new FilmRoll({
+            container: '#container_id',
+            configure_load: 50
+        });
+    </script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+
+</body></html>

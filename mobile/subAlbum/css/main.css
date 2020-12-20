@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*index2-1*/
+
+#album{width: 100%; height: auto; position: relative;}
+#album h2{}
+.albumBox{width: 100%; height: auto; padding: 0 3% 30px 3%;}
+.albumBox .albumList{width: 100%; height: 100%;}
+.albumBg a{display: block;}
+
+.albumBg{width: 100%; height: auto; background-color: green; margin-bottom: 20px;}
+.albumBg:nth-child(1){background: url(../images/noreply01.jpg) center center no-repeat;}
+.albumBg:nth-child(2){background: url(../images/noreply02.jpg) center center no-repeat;}
+.albumBg:nth-child(3){background: url(../images/noreply03.jpg) center center no-repeat;}
+.albumBg:nth-child(4){background: url(../images/noreply04.jpg) center center no-repeat;}
+.albumBg:nth-child(5){background: url(../images/noreply05.jpg) center center no-repeat;}
+.albumBg:nth-child(6){background: url(../images/noreply06.jpg) center center no-repeat;}
+
+.albumBg .bgInner{width: 100%; height: auto; background-color: rgba(0,0,0,.6); overflow: hidden; margin: 0 auto;}
+.albumBg .bgInner img{width: 30%; float: left; margin: 4% 0 4% 6%; border: 1px solid #fff;}
+
+.bgInner ul{width: 64%; height: auto; color: #fff; text-align: center; font-size: 1em; margin-top: 9%; float: right;}
+.bgInner ul li{line-height: 1.5em;}
+.bgInner ul li:nth-child(1){font-size: 1.2em;}
+.bgInner ul li:nth-child(n+2){font-size: .85em;}
+
+
+/* tab */
+#albumContainer {
+    width: 100%;
+}
+#albumContainer ul.tabs {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #c3c3c3;
+}
+#albumContainer ul.tabs li {
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+}
+#albumContainer ul.tabs li.active {
+    color: #f3b522;
+}
+
+#albumContainer #search{width: 100%; height: 44px; margin: 10px 0;}
+#search .searchIcon{width: 44px; height: 44px; float: right;}
+ #search .searchIcon span{width: 28px; height: 28px; display: block; background: url(../images/search.png) 0 0 no-repeat; background-size: contain; text-indent: -9999px;}
+
+#search .searchBox{display: none; width: 100%; height: 28px; text-align: right; padding-right: 16px;}
+#search .searchBox form{}
+#search .searchBox form fieldset{}
+#albumContainer .searchBox form fieldset input{}
+#search .searchBox form fieldset .searchTxt{border: 1px solid #cecece; width: 200px; height: 28px;}
+#search .searchBox form fieldset .submitBtn{border: none; width: 28px; height: 28px; background: url(../images/search.png) 0 0 no-repeat; background-size: contain; text-indent: -9999px;}
+
+#tabContainer {
+    clear: both;
+    width: 100%;
+}
+.tabContent {
+    display: none;
+}
+
+
+/*viewmore button*/
+.viewmore{
+  display: none;
+}
+.btnContainer{
+  width: 100%; height: 50px;
+  text-align: center;
+}
+.btnContainer button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  background-color: #fff;
+}
+.btnContainer button i{color: #cccccc; font-size: 3em;}
+
+
+/*index2-2*/
+
+#discography{width: 100%; height: auto; position: relative;}
+#discography h2{}
+#discography .discBox{width: 100%; height: auto; font-family: 'Noto Sans'; padding-top: 20px;}
+#discography .discBox h3{text-align: center; font-family: 'Montserrat'; line-height: 1.5em; font-size: 1.1em; width: 75%; margin: 0 auto; border-left: 2px solid #e3e3e3; border-right: 2px solid #e5e5e5; color:}
+#discography .discBox h3 span{display: block;}
+
+#discography .discBox .albumCover{width: 100%; height: auto; overflow: hidden; background-color: #f8f8f8; padding: 5% 0; margin-top: 20px; border-radius: 0 7px 7px 0;}
+#discography .discBox .albumCover img{width: 55%; float: left; margin-top: 10%; margin: 5%; box-shadow: 1px 1px 5px grey}
+#discography .discBox .albumCover ul{width: 35%; height: auto; float: left; margin-top: 40%; font-size: .9em; color: #717171;}
+#discography .discBox .albumCover ul li{width: 100%; height: 1.5em;}
+#discography .discBox .albumCover ul li i{color: #333;}
+
+#discography .discBox .trackList{clear: both; width: 70%; height: 100%; margin-left: 30%; margin-top: -20px; background-color: #e9e9e9; padding: 7%; border-radius: 7px 0 0 7px;}
+#discography .discBox .trackList h4{font-size: 1.2em; font-family: 'Montserrat'; line-height: 2em; color: #fff; text-shadow: 2px 1px 3px rgba(0,0,0,.5);}
+#discography .discBox .trackList ol{width: 100% ; height: auto; font-size: .9em; margin-left: 7%;}
+#discography .discBox .trackList ol li{list-style: decimal; line-height: 1.7em;}
+
+.streaming{width: 132px; height: 44px; margin: 0; padding: 0; float: right;}
+.streaming a{display: inline-block; padding: 10px; float: right;}
+.streaming a img{width: 24px;}
+
+#discography .discBox .albumExplain{width: 90%; margin-left: 5%; font-size: .85em; padding: 50px 0;}
+#discography .discBox .albumExplain p{line-height: 1.7em; padding-bottom: 9px;}
+#discography .discBox .albumExplain .explainHead{width: 85%; margin: 0 auto 15px auto; font-weight: bold; text-align: center; border-bottom: 1px solid #a6c8b6;}
+#discography .discBox .albumExplain i{font-size: 1.5em; color: #a6c8b6; display: block; text-align: center; line-height: 2em;}
+
+
+

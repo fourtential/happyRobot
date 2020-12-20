@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*#footerWrap*/
+#footerWrap{width: 100%; height: 195px; clear: both; background-color: #434343; color: #fff; font-family: 'Noto Sans'; font-size: .7em;}
+#footerWrap .footerInner{width: 100%; overflow: hidden;}
+#footerWrap .footerInner .sns{width: 100%;}
+#footerWrap .footerInner .sns a{display: inline-block; float: right; text-indent: -9999px; width: 22px; height: 22px; margin: 7px 5px 5px 5px;}
+#footerWrap .footerInner .sns a:nth-child(1){background: url(../images/icons/twitter.png) center center no-repeat; background-size: contain;}
+#footerWrap .footerInner .sns a:nth-child(2){background: url(../images/icons/facebook.png) center center no-repeat; background-size: contain;}
+#footerWrap .footerInner .sns a:nth-child(3){background: url(../images/icons/instagram.png) center center no-repeat; background-size: contain;}
+#footerWrap .footerInner .sns a:nth-child(4){background: url(../images/icons/youtube.png) center center no-repeat; background-size: contain;}
+
+#footerWrap .footerInner .footerLogo{clear: both; padding: 2% 0 4% 8%}
+#footerWrap .footerInner .footerLogo p{padding-bottom: 4px;}
+#footerWrap .footerInner .footerLogo span{display: inline-block; text-indent: -9999px; width: 280px; background: url(../images/happyrobot/footerLogo.png) 0 0 no-repeat; background-size: contain;}
+
+#footerWrap .footerInner .contact{font-size: 1.2em;}
+#footerWrap .footerInner .contact ul{}
+#footerWrap .footerInner .contact ul li{width: 100%; height: 1.5em; padding-left: 8%}
+#footerWrap .footerInner>p{float: right; padding: 1.3em 1em 1em 0;}

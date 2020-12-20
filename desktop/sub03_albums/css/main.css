@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+#subAlbums{width: 100%; height: auto;  background: url(../images/albumsBg.jpg) 0 0 repeat;  background-size: cover;}
+.albumHead{width: 100%; height: 300px; background: #8e8e8e;}
+.albumHead .albumInner{width: 1097px; height: 300px; background: url(../images/albumsHead.jpg) 0 0 no-repeat; margin: 0 auto;}
+
+.albumHead .albumInner h2{font-size: 100px; float: right; margin-top: 176px; color: #fff;}
+
+.albumList{width: 990px; height: auto; overflow: hidden; margin: 0 auto; padding: 80px 0;}
+
+
+.albumHover {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  margin: 10px;
+  min-width: 310px -60px;
+  max-width: 310px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #000000;
+  font-size: 16px;
+  float: left;
+}
+.albumHover * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.albumHover img {
+  position: relative;
+  max-width: 100%;
+  vertical-align: top;
+}
+.albumHover figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px;
+}
+.albumHover figcaption:before,
+.albumHover figcaption:after {
+  width: 1px;
+  height: 0;
+}
+.albumHover figcaption:before {
+  right: 0;
+  top: 0;
+}
+.albumHover figcaption:after {
+  left: 0;
+  bottom: 0;
+}
+.albumHover h3,
+.albumHover p {
+  line-height: 1.5em;
+}
+.albumHover h3 {
+  margin: 0 0 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.albumHover p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+.albumHover a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.albumHover:before,
+.albumHover:after,
+.albumHover figcaption:before,
+.albumHover figcaption:after {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0.8;
+}
+.albumHover:before,
+.albumHover:after {
+  height: 1px;
+  width: 0%;
+}
+.albumHover:before {
+  top: 0;
+  left: 0;
+}
+.albumHover:after {
+  bottom: 0;
+  right: 0;
+}
+.albumHover:hover img,
+.albumHover.hover img {
+  opacity: 0.4;
+}
+.albumHover:hover figcaption,
+.albumHover.hover figcaption {
+  opacity: 1;
+}
+.albumHover:hover figcaption:before,
+.albumHover.hover figcaption:before,
+.albumHover:hover figcaption:after,
+.albumHover.hover figcaption:after {
+  height: 100%;
+}
+.albumHover:hover:before,
+.albumHover.hover:before,
+.albumHover:hover:after,
+.albumHover.hover:after {
+  width: 100%;
+}
+.albumHover:hover:before,
+.albumHover.hover:before,
+.albumHover:hover:after,
+.albumHover.hover:after,
+.albumHover:hover figcaption:before,
+.albumHover.hover figcaption:before,
+.albumHover:hover figcaption:after,
+.albumHover.hover figcaption:after {
+  opacity: 0.1;
+}

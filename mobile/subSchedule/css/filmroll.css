@@ -1,0 +1,107 @@
+#film_roll{padding-top: 60px;}
+#film_roll, div.film_roll_child{
+  height: 100%;
+  background: #444;
+}
+.film_roll_children {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div.film_roll_child img{
+  height: 100%;
+  max-width: none;
+  max-height: 330px;
+  padding: 14px;
+}
+.film_roll_wrapper {
+   display: block;
+   text-align: center;
+   float: none;
+   position: relative;
+   top: auto;
+   right: auto;
+   bottom: auto;
+   left: auto;
+   z-index: auto;
+   width: 100%;
+   margin: 0 !important;
+   padding: 0 !important;
+   overflow-x: hidden;
+   width: 100%;
+ }
+.film_roll_shuttle {
+   text-align: left;
+   float: none;
+   position: relative;
+   top: 0;
+   left: 0;
+   right: auto;
+   bottom: auto;
+   margin: 0 !important;
+   padding: 0 !important;
+   z-index: auto;
+ }
+ .film_roll_shuttle.vertical_center:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+   margin-right: -0.25em;
+ }
+.film_roll_child {
+  position: relative;
+  display: inline-block;
+  *display:inline;
+  vertical-align:middle;
+  zoom:1;
+}
+.film_roll_prev, .film_roll_next {
+   position: absolute;
+   top: 48%;
+   left: 15px;
+   width: 44px;
+   height: 44px;
+   margin: -20px 0 0 0;
+   padding: 0;
+   font-size: 25px;
+   line-height: 44px;
+   color: #fff;
+   text-align: center;
+   border-radius: 20px;
+   opacity: .6;
+ }
+.film_roll_prev:hover, .film_roll_next:hover {
+   color: white;
+   text-decoration: none;
+   opacity: 0.9;
+ }
+.film_roll_next {
+   left: auto;
+   right: 15px;
+ }
+.film_roll_pager {
+   text-align: center;
+   position: relative;
+   top: -10px;
+ }
+.film_roll_pager a {
+   width: 5px;
+   height: 5px;
+   border: 1px solid #777777;
+   border-radius: 5px;
+   display: inline-block;
+   margin: 0 5px 0 0;
+   transition: all 1s ease;
+ }
+.film_roll_pager a.active {
+   background: #fff;
+ }
+.film_roll_pager span {
+   display: none;
+ }
+ .film_roll_pager a, a.film_roll_prev, a.film_roll_next {
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+ }

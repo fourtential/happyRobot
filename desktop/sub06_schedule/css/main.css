@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+#subSchedule{width: 100%; height: auto; background: #d7d7d7;}
+.scheduleHead{width: 100%; height: 300px;  background: url(../images/scheduleHead.jpg) 0 0 no-repeat; }
+.scheduleHead .scheduleInner{max-width: 1100px; height: 300px; margin: 0 auto;}
+
+.scheduleHead .scheduleInner h2{font-size: 100px; float: right; margin-top: 176px; color: #fff;}
+
+.scheduleBox{width: 100%; height: auto;}
+.scheduleBox .tabBar{width: 100%; height: 80px;  background-color: #84ccc9;}
+.scheduleBox .tabBar ul{width: 600px; height: 80px; margin: 0 auto;}
+.scheduleBox .tabBar ul li{width: 300px; font-size: 35px; line-height: 80px; text-align: center; float: left;}
+.scheduleBox .tabBar ul li a{display: block; color: #fff;}
+.scheduleBox .tabBar ul li:hover {background-color: #9cd7d5}
+.scheduleBox .tabBar ul li::hover a {transform: translateY(-1px)}
+
+#schConcert{width: 100%; height: auto;}
+
+#schCalendar{max-width: 900px; margin: 0 auto; padding: 100px 0;}
+#schCalendar h3{width: 100%; text-align: center; font-size: 5em; color: #fff; text-shadow: 1px 1px 1px grey; line-height: 1em; padding-bottom: 30px;}
+#schCalendar #caleandar{}
+#schCalendar>p{text-align: right; line-height: 2em;}
+
+
+

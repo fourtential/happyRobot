@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>해피로봇레코드</title>
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="maincss/main.css">
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--albums 슬라이드 CSS-->
+    <link rel="stylesheet" type="text/css" href="maincss/slick.css" />
+    <link rel="stylesheet" type="text/css" href="maincss/slick-theme.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="maincss/swiper.min.css">
+    <!--aos CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="mainjs/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--artistBox 이미지 전환 -->
+    <script src="mainjs/imgtrans.js"></script>
+    <!--팝업창 -->
+    <script src="mainjs/mainpopup.js"></script>
+    <!--top btn -->
+    <script src="mainjs/easing.js"></script>
+    <script src="mainjs/move-top.js"></script>
+    <script src="mainjs/slidemove.js"></script>
+</head>
+
+<body>
+    <div id="Wrap">
+        <header id="headerWrap">
+            <div class="headerInner">
+                <div class="headerBox">
+                    <nav id="gnb">
+                        <h1 id="logo">
+                            <a href="http://newmj12.cafe24.com/index.html"><img src="images/happyrobot/logo_white.png" alt="해피로봇레코드 로고"></a>
+                        </h1>
+                        <ul class="mainMenu">
+                            <li class="depth01 menu01"><a href="../sub01_artists/index1.html">아티스트</a></li>
+                            <li class="depth01 menu02"><a href="../sub03_albums/index3.html">앨범</a></li>
+                            <li class="depth01 menu03"><a href="../sub05_news/index5.html">뉴스</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="#">NOTICE</a></li>
+                                    <li class="subMenu"><a href="#">PRESS</a></li>
+                                    <li class="subMenu"><a href="#">MPMGWEEK</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth01 menu04"><a href="../sub06_schedule/index6.html">스케줄</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="#">CONCERT</a></li>
+                                    <li class="subMenu"><a href="#">CALENDAR</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth01 menu05"><a href="#">스토어</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="#">RECORD</a></li>
+                                    <li class="subMenu"><a href="#">MD</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="gnu">
+            
+            
+        </div>
+        <footer id="footerWrap">
+            <div class="footerInner">
+                <div class="footerBox">
+                    <div class="footerLft">
+                        <h4 class="footerLogo">
+                            <a href="index.html"><img src="images/happyrobot/footerLogo.png" alt="푸터로고"></a>
+                        </h4>
+                    </div>
+                    <div class="footerCt">
+                        <address id="contact">
+                            <div class="phoneMail">
+                                <img src="images/icons/contact.svg" alt="">
+                                <p>02-322-5684 / F. 02-322-0015</p>
+                                <p>happyrobotkr@naver.com</p>
+                            </div>
+                            <div class="address">
+                                <img src="images/icons/location.svg" alt="">
+                                <p>서울특별시 마포구 서강로 78<br>엠피엠지 3층 (창전동 13-5)</p>
+                            </div>
+                        </address>
+                        <div class="copyRight">
+                            <p>copyright© 2016 Happy Robot Records All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="footerRht">
+                        <div class="family">
+                            <select onchange="window.open(this.value)">
+                                <option>Family Stie</option>
+                                <option value="http://www.mpmg.co.kr/">MPMG</option>
+                                <option value="https://www.mintpaper.co.kr/festival_gmf/">GMF</option>
+                                <option value="https://www.mintpaper.co.kr/">Mint Paper</option>
+                            </select>
+                        </div>
+                        <div class="snsIcon">
+                            <a href="https://www.facebook.com/HappyRobotRecords" target="_blank"><img src="images/icons/facebook.png" alt="페이스북아이콘"></a>
+                            <a href="https://www.instagram.com/happy_robot_records/?hl=ko" target="_blank"><img src="images/icons/instagram.png" alt="인스타그램아이콘"></a>
+                            <a href="https://twitter.com/HappyRobotKR" target="_blank"><img src="images/icons/twitter.png" alt="트위터아이콘"></a>
+                            <a href="http://www.youtube.com/user/HappyRobotRecords" target="_blank"><img src="images/icons/youtube.png" alt="유튜브아이콘"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--탑버튼-->
+        <div class="btnTop">
+            <a href="#" id="toTop">
+                <span id="toTopHover"><img src="images/icons/btnTop.svg" alt="상단으로이동"></span></a>
+        </div>
+    </div>
+
+    <!--팝업창-->
+    <div id="showimage" style="z-index:99;position:absolute;width:322px;right:500px;top:200px;">
+        <script>
+            function closeWin() {
+                var chk = document.getElementById('Notice')
+                if (chk.checked) {
+                    setCookie("Notice", "done", 1); //1일간 안보임을 뜻함
+                }
+            }
+            if (getCookie("Notice") == "done") {
+                hidebox();
+            }
+        </script>
+        <div>
+            <img src="images/design/popup.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+        </div>
+        <div style="font-size:14px;text-align:center;color:#fff;">
+            <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이 창을 열지 않음 선택상자">
+            <label for="Notice">오늘은 이 창을 열지 않음</label>
+            <a href="#" onclick="closeWin();hidebox();return false;" style="color:#333; position:absolute; bottom:30px; right: 20px"> [close] </a>
+        </div>
+    </div>
+
+    <!--albums slickSlide -->
+    <script type="text/javascript" src="mainjs/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.albums').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+            });
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="mainjs/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!--aos 스크립트-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body></html>

@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto Sans KR|Righteous|Maven+Pro&display=swap');
+
+/*reset*/
+/* base */
+body,input,textarea,select,button,table,header{font-family: 'Righteous','Noto Sans KR'; color: #333;}
+
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol,li{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+table{border-collapse: collapse}
+header,footer,#gnb,section,article,hgroup,aside{display: block}
+p,li,dd{line-height: 1.5em; text-align: justify}
+.hidden{position: absolute; width: 1px; height: 1px; overflow: hidden; left: -1000%; color: #fff}
+
+/* a-style */
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{color:#333;text-decoration:none}
+
+
+/*layout*/
+#Wrap{width: 100%; height: 100%;}
+
+/*headerWrap*/
+#headerWrap{width: 100%;height: 100px; background-image: url(../images/design/gnbLine.jpg);}
+#headerWrap .headerInner{width: 100%; height: 100px;}
+#headerWrap .headerInner .headerBox{max-width: 1100px; height: 100px; margin: 0 auto; overflow:visible;}
+
+/*#gnb*/
+#gnb{width: 100%; height: 100px; position: relative; z-index: 9;}
+#logo{float: left; margin-top: 35px;}
+#logo a{display: block;}
+#logo a img{width: 50px;}
+
+.mainMenu{width: 630px; height: 100px; float: right; position: relative; top:75px; }
+.depth01>a{text-indent: -9999px;}
+.mainMenu .depth01{height: 26px; margin-right: 42px; float: left;}
+.mainMenu .depth01:nth-last-child(1){margin-right: 0;}
+.mainMenu .depth01 a{color:#efefef; opacity: .8; font-size: 18px; display: block;}
+.mainMenu .depth01 a:hover{opacity: 1;}
+
+
+.mainMenu .menu01{width: 95px; height: 26px; background: url(../images/design/gnbArtist.png)no-repeat;}
+.mainMenu .menu01:hover{background: url(../images/design/gnbArtist_strk.png)no-repeat;}
+
+.mainMenu .menu01 a{display: block;}
+.mainMenu .menu02{width: 98px; height: 26px; background: url(../images/design/gnbAlbums.png)no-repeat;}
+.mainMenu .menu02:hover{background: url(../images/design/gnbAlbums_strk.png)no-repeat;}
+.mainMenu .menu02 a{display: block;}
+.mainMenu .menu03{width: 70px; height: 26px; background: url(../images/design/gnbNews.png)no-repeat;}
+.mainMenu .menu03 a{display: block;}
+.mainMenu .menu03:hover{background: url(../images/design/gnbNews_strk.png)no-repeat;}
+.mainMenu .menu04{width: 124px; background: url(../images/design/gnbSchedule.png)no-repeat;}
+.mainMenu .menu04:hover{background: url(../images/design/gnbSchedule_strk.png)no-repeat;}
+.mainMenu .menu04 a{display: block;}
+
+.mainMenu .menu05{width: 75px; background: url(../images/design/gnbStore.png);}
+.mainMenu .menu05:hover{background: url(../images/design/gnbStore_strk.png)no-repeat;}
+.mainMenu .menu05 a{display: block;}
+
+.mainMenu .depth02{width: 110px; height:90px;}
+.mainMenu .depth02 li{width: 110px; height: 30px; line-height: 2.5em;}
+.mainMenu .depth02 li:nth-child(1){padding-top: 10px;}
+
+
+/* gnb slide */
+nav .depth02{
+	visibility: hidden;
+	opacity: 0;
+	transition: .2s ease-in-out;
+}
+nav .depth01:hover .depth02{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/*#footerWrap*/
+#footerWrap{width: 100%; height: 170px; font-family: 'Noto Sans'; font-size: 14px; background: url(../images/design/lineBG_dark.jpg);}
+#footerWrap .footerInner{width: 100%; height: 170px;}
+#footerWrap .footerInner .footerBox{max-width: 1100px; height: 140px; color:#fff; margin: 0 auto; padding-top: 30px; overflow: hidden;}
+
+/*.footerBox*/
+.footerLft{width: 205px; height: 140px; float: left;}
+.footerLft h4{}
+.footerLft h4 a{display: block; margin-left: 30px; margin-top: -10px;}
+.footerLft h4 a img{width: 140px; height: 91px;}
+
+.footerCt{width: 690px; height: 140px; margin: 0 auto; float: left;}
+.footerCt #contact{width:560px; height:46px; margin: 20px auto;}
+.footerCt #contact .phoneMail{width: 280px; height: 60px; float: left;}
+.footerCt #contact .phoneMail img{width: 24px; height: 60px; float: left; margin-top: -30px;}
+.footerCt #contact .phoneMail p{margin-left: 35px;}
+.footerCt #contact .address{width: 280px; height: 60px; float: left;}
+.footerCt #contact .address img{width: 24px; height: 60px;float: left; margin-top: -30px;}
+.footerCt #contact .address p{margin-left: 35px; }
+.footerCt .copyRight{border-top: 1px solid #555555; padding-top: 4px;}
+.footerCt .copyRight p{text-align: center;}
+
+.footerRht{width: 176px; height: 100px;float: right;}
+.footerRht .family{}
+.footerRht .family select{font-size: 14px; width: 176px;}
+.footerRht .snsIcon{width: 176px; height: auto; overflow: hidden;}
+.footerRht .snsIcon a{display: inline-block; float: left;}
+.footerRht .snsIcon a img{width: 24px; padding: 10px;}
+
+.btnTop{position: fixed; bottom: 30px; right: 40px; z-index: 9;}
+.btnTop img{width: 50px;}
+
+    
+    

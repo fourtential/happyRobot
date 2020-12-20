@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HRR - ALBUMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+    <!-- 숫자인식,메일주소,지도상의 주소링크 막기 -->
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../common/css/base.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <!-- 아이폰 북마크 추가시 바탕화면에서 보이는 아이콘이미지-->
+    <link rel="apple-touch-icon" href="../favicon.ico">
+
+    <script src="../mainjs/jquery-3.4.1.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.js"></script>
+    <script src="../common/js/gnb.js"></script>
+    <!-- 검색창 -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".searchIcon").toggle(function() {
+                $(".searchBox").css("display", "block");
+                $(".searchIcon").hide();
+            }, function() {
+                $(".searchBox").css("display", "none");
+                $(".searchIcon").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#headerWrap" class="hidden">네비게이션바로가기</a>
+        <a href="#contentWrap" class="hidden">컨텐츠바로가기</a>
+    </div>
+    <!-- Back to top button -->
+    <a id="button"><i class="fas fa-angle-double-up fa-2x"></i></a>
+    <div id="wrap">
+        <header id="headerWrap">
+            <div class="headerInner">
+                <div class="headerBox">
+                    <nav class="menu-opener">
+                        <div class="menu-opener-inner"></div>
+                    </nav>
+                    <div class="menu">
+                        <ul class="menu-inner">
+                            <a href="../subArtist/index1-1.html" class="menu-link">
+                                <li>ARTISTS</li>
+                            </a>
+                            <a href="../subAlbum/index2-1.html" class="menu-link">
+                                <li>ALBUMS</li>
+                            </a>
+                            <a href="http://newmj12.cafe24.com/g5/bbs/board.php?bo_table=hrrNoticem" class="menu-link">
+                                <li>NEWS</li>
+                            </a>
+                            <a href="../subSchedule/index4-1.html" class="menu-link">
+                                <li>SCHEDULE</li>
+                            </a>
+                            <a href="../subStore/index5-1.html" class="menu-link">
+                                <li>STORE</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <h1 id="logo">
+                        <a href="../index.html"><span>해피로봇레코드 로고</span></a>
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <section id="album">
+            <h2>ALBUMS</h2>
+            <div id="albumContainer">
+                <ul class="tabs">
+                    <li class="active" rel="tab1">LATEST</li>
+                    <li rel="tab2">OLDEST</li>
+                </ul>
+                <div id="search">
+                    <a class="searchIcon" href="javascript:void(0);"><span>검색아이콘</span></a>
+                    <div class="searchBox">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend class="hidden">검색창</legend>
+                                <label>
+                                    <input id="inputTxt" class="searchTxt" type="text"></label>
+                                <label>
+                                    <input id="inputSubmit" class="submitBtn" type="submit"></label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div id="tabContainer">
+                    <div id="tab1" class="tabContent">
+                        <div class="albumBox latest">
+                            <ul class="albumList">
+                                <li class="albumBg">
+                                    <a href="index2-2.html">
+                                        <div class="bgInner">
+                                            <img src="images/noreply01.jpg" alt="노리플라이 나의 봄">
+                                            <ul>
+                                                <li>나의 봄(feat.CHEEZE)</li>
+                                                <li>NO REPLY</li>
+                                                <li>Apr 03, 2018</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply02.jpg" alt="노리플라이 beautiful">
+                                            <ul>
+                                                <li>Beautiful</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 29, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply03.jpg" alt="노리플라이 여정">
+                                            <ul>
+                                                <li>여정</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 16, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply04.jpg" alt="노리플라이 Where is Love">
+                                            <ul>
+                                                <li>Where is Love</li>
+                                                <li>NO REPLY</li>
+                                                <li>Dec 12, 2015</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply05.jpg" alt="노리플라이 natural">
+                                            <ul>
+                                                <li>natural</li>
+                                                <li>NO REPLY</li>
+                                                <li>Apr 29, 2015</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply06.jpg" alt="노리플라이 comma">
+                                            <ul>
+                                                <li>comma</li>
+                                                <li>NO REPLY</li>
+                                                <li>Jul 12, 2011</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="btnContainer">
+                                <button id="toggle"><i class="fas fa-angle-double-down fa-3x"><span class="hidden">앨범 목록 더보기</span></i></button>
+                            </div>
+                            <ul class="albumList viewmore">
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply01.jpg" alt="노리플라이 나의 봄">
+                                            <ul>
+                                                <li>나의 봄(feat.CHEEZE)</li>
+                                                <li>NO REPLY</li>
+                                                <li>Apr 03, 2018</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply02.jpg" alt="노리플라이 Beautiful">
+                                            <ul>
+                                                <li>Beautiful</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 29, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply03.jpg" alt="노리플라이 여정">
+                                            <ul>
+                                                <li>여정</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 16, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply04.jpg" alt="노리플라이 Where is Love">
+                                            <ul>
+                                                <li>Where is Love</li>
+                                                <li>NO REPLY</li>
+                                                <li>Dec 12, 2015</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tabContent">
+                        <div class="albumBox oldest">
+                            <ul class="albumList">
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply06.jpg" alt="노리플라이 comma">
+                                            <ul>
+                                                <li>comma</li>
+                                                <li>NO REPLY</li>
+                                                <li>Jul 12, 2011</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply05.jpg" alt="노리플라이 natural">
+                                            <ul>
+                                                <li>natural</li>
+                                                <li>NO REPLY</li>
+                                                <li>Apr 29, 2015</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply04.jpg" alt="노리플라이 Where is Love">
+                                            <ul>
+                                                <li>Where is Love</li>
+                                                <li>NO REPLY</li>
+                                                <li>Dec 12, 2015</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply03.jpg" alt="노리플라이 여정">
+                                            <ul>
+                                                <li>여정</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 16, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply02.jpg" alt="노리플라이 Beautiful">
+                                            <ul>
+                                                <li>Beautiful</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 29, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply01.jpg" alt="노리플라이 나의 봄">
+                                            <ul>
+                                                <li>나의 봄(feat.CHEEZE)</li>
+                                                <li>NO REPLY</li>
+                                                <li>Apr 03, 2018</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="btnContainer">
+                                <button id="toggle"><i class="fas fa-angle-double-down fa-3x"><span class="hidden">앨범 목록 더보기</span></i></button>
+                            </div>
+                            <ul class="albumList viewmore">
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply02.jpg" alt="노리플라이 Beautiful">
+                                            <ul>
+                                                <li>Beautiful</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 29, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply03.jpg" alt="노리플라이 여정">
+                                            <ul>
+                                                <li>여정</li>
+                                                <li>NO REPLY</li>
+                                                <li>Mar 16, 2017</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply04.jpg" alt="노리플라이 Where is Love">
+                                            <ul>
+                                                <li>Where is Love</li>
+                                                <li>NO REPLY</li>
+                                                <li>Dec 12, 2015</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="albumBg">
+                                    <a href="">
+                                        <div class="bgInner">
+                                            <img src="images/noreply01.jpg" alt="노리플라이 나의 봄">
+                                            <ul>
+                                                <li>나의 봄(feat.CHEEZE)</li>
+                                                <li>NO REPLY</li>
+                                                <li>Apr 03, 2018</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footerWrap">
+            <div class="footerInner">
+                <div class="sns">
+                    <a href="https://twitter.com/HappyRobotKR" target="_blank">트위터</a>
+                    <a href="https://www.facebook.com/HappyRobotRecords" target="_blank">페이스북</a>
+                    <a href="https://www.instagram.com/happy_robot_records/?hl=ko" target="_blank">인스타그램</a>
+                    <a href="http://www.youtube.com/user/HappyRobotRecords" target="_blank">유튜브</a>
+                </div>
+                <div class="footerLogo">
+                    <p>행복한 음악을 전하는</p>
+                    <span>해피로봇레코드 텍스트로고</span>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>02-322-5684</li>
+                        <li>Mapo-gu, Seoul</li>
+                        <li>happyrobotkr@naver.com</li>
+                    </ul>
+                </div>
+                <p>© Happy Robot Records 2016 All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- top button -->
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+
+    <!-- view more button -->
+    <script>
+        $(document).ready(function() {
+            $('#toggle').click(function() {
+                $('.viewmore').fadeIn('slow');
+                $('.btnContainer').slideUp();
+            });
+        });
+    </script>
+
+    <!-- tab -->
+    <script>
+        $(function() {
+            $(".tabContent").hide();
+            $(".tabContent:first").show();
+
+            $("ul.tabs li").click(function() {
+                $("ul.tabs li").removeClass("active").css("color", "#333");
+                $(this).addClass("active").css("color", "#f2b522");
+                $(".tabContent").hide()
+                var activeTab = $(this).attr("rel");
+                $("#" + activeTab).fadeIn()
+            });
+        });
+    </script>
+</body>
+
+</html>

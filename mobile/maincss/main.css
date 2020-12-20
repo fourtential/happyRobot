@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+h3{text-align: center; font-size: 2em; line-height: 2.6em;}
+/*more button*/
+.btnMore {height: 48px; display: block; float: right; margin-right: 3%; line-height: 48px;}
+.btnMore span{width: 25px; height: 48px; display: inline-block; text-indent: -9999px; background: url(../images/icons/plus.png) 0 12px no-repeat; background-size: contain; margin-left: 4px;}
+
+
+/*layout*/
+
+/*#contentWrap*/
+#contentWrap{width: 100%; height: auto;}
+#contentWrap. contentInner{width: 100%; height: auto;}
+
+/*.contentInner*/
+#main{width: 100%; height: auto; background: url(../images/design/mMainbg.jpg) center center no-repeat; background-size: cover; position: relative; padding-bottom: 50px;}
+#main h3{width: 158px; height: 78px ;text-indent: -9999px; background: url(../images/happyrobot/mTxtlogo.png) center center no-repeat; background-size: contain; padding: 29px 0 29px 0; margin: 0 auto; margin-bottom: 20px;}
+
+/*
+#main .bxslider{}
+#main .bxslider div{}
+#main .bxslider div img{}
+*/
+
+#main .btnArtist{background-color: #333;  display: inline-block; width: 80px; height: 80px; border-radius: 100%; text-align: center; line-height: 1.5em; position: absolute; z-index: 9; right: 5%; bottom: 8%;}
+#main .btnArtist a{display: block; margin-top: 24px; color: #fff;}
+#main .btnArtist a img{}
+
+
+#news{width: 100%; height: 170px; background: #f2f2f2; position: relative;}
+#news h3{}
+#news .newsBox{width: 100%; height: 50%; position: absolute;  overflow: hidden;}
+#news .newsBox button{width: 34px; height: 57px; display: block; text-indent: -9999px; border:none; cursor:pointer;}
+#news .newsBox button:nth-child(1){float: left; margin: 0 1% 0 3%; background: url(../images/icons/arrowLft.png) 0 0 no-repeat;}
+#news .newsBox button:nth-child(2){float: right; margin: 0 3% 0 1%; background: url(../images/icons/arrowRt.png) 0 0 no-repeat;}
+#news .newsBox p{width: 68%; height: auto; text-align: center; line-height: 1.4em; position: absolute; top: 0; margin: 0 16% 0 16%;}
+#news .newsBox p span{display: block; font-size: .8em; line-height: 2em; text-align: right;}
+
+
+#newAlbums{width: 100%; height: auto; background: url(../images/design/mAlbumbg.jpg) center center no-repeat; background-size: cover;}
+#newAlbums h3{padding: 20px 0 10px 0;}
+#newAlbums .albumBox{width: 100%; height: auto; overflow: hidden; padding-bottom: 10px;}
+#newAlbums .albumBox ul{width: 100%; min-height: 440px;}
+#newAlbums .albumBox ul li{width: 50%; height: 50%; font-size: .85em; font-family: 'Noto Sans'; float: left;}
+#newAlbums .albumBox ul li figure{width: 80%; margin: 0 auto;}
+#newAlbums .albumBox ul li figure a{display: block;}
+#newAlbums .albumBox ul li figure a img{width: 100%;}
+#newAlbums .albumBox ul li figure figcaption{padding: 5px 0 12px 0; line-height: 1.3em;}
+#newAlbums .albumBox ul li figure figcaption span{display: block; font-size: .8em; text-align: right;}
+
+#concert{clear: both; width: 100%; height: auto; background: url(../images/design/mConcertbg.jpg) center center no-repeat; background-size: cover; padding-top: 15%;}
+#concert h3{writing-mode: vertical-rl; float: left;}
+#concert .concertBox{width: 100%; height: auto; position: relative;}
+#concert .concertBox .easyzoom{width: 72%;}
+#concert .concertBox .easyzoom a img{width: 100%;}
+#concert .concertBox>a{display: inline-block; padding: 5px; position: absolute; bottom: 11%; right: 0;}
+#concert .concertBox>a i{font-size: 1.5em; color: #a5a5a5}
+#concert .concertBox a span{display: inline-block; text-indent: -9999px;}
+
+
+/*easyzoom*/
+.thumbnails{width: 100%; overflow: hidden;}
+.thumbnails li{float: left; margin: 8% 1% 10% 1%; width: 20%;}
+.thumbnails:nth-child(2){padding-left: 7%;}
+.thumbnails li a{display: block;}
+.thumbnails li a img{width: 100%;}
+
+
+#schedule{clear:both; 100%; height: auto;}
+#schedule h3{}
+#schedule .scheduleBox{width: 100%; height: auto; padding: 0 3%; overflow: hidden; padding-bottom: 30px}
+#schedule .scheduleBox ul{font-size: .75em; font-family: 'Noto Sans'; border-top: 3px solid #f3b522; border-bottom: 3px solid #f3b522; line-height: 2.4em;}
+#schedule .scheduleBox ul:nth-child(1){width: 120px; height: 40px; background-color: #222; color: #fff; font-size: 1.5em; font-family: 'Montserrat'; text-align: center; line-height: 40px; border: 0; margin-bottom: 10px;}
+#schedule .scheduleBox ul:nth-child(2){float: left; width: 16%; background-color: #efefef;}
+#schedule .scheduleBox ul:nth-child(3){float: left; width: 33%}
+#schedule .scheduleBox ul:nth-child(4){float: left; width: 51%; background-color: #efefef;}
+#schedule .scheduleBox ul li{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+
+
+
+
+
+

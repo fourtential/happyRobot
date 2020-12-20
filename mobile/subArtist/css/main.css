@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/*index1-1*/
+/*artist*/
+#artist{width: 100%; position: relative;}
+#artist h2{}
+#artist .artistList{width: 100%; padding-top: 20px;}
+#artist .artistList li a{display: block;}
+#artist .artistList li{width: 90%; margin: 0 auto; margin-bottom: 5%}
+#artist .artistList li:nth-last-child(1){margin-bottom: 15%}
+#artist .artistList li a figure{width: 100%;margin: 0 auto; position: relative;}
+#artist .artistList li a figure img{width: 100%;}
+#artist .artistList li a figure figcaption{position: absolute; right: 4%; bottom: 5%; color: #fff;}
+
+.viewmore{display: none;}
+.btn-container01{
+  width: 100%; height: 80px;
+    text-align: center;
+}
+.btn-container01 button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  background-color: #fff;
+}
+.btn-container01 button i{color: #cccccc; font-size: 3em;}
+
+
+/*index1-2*/
+/*profile*/
+.profile{position: relative; 100%; height: auto;}
+.profile h2{}
+.profile .noreply{padding-top: 25px;}
+
+.profile .noreply figure{width: 100%;}
+.profile .noreply figure figcaption{width: 100%; height: 70px; padding-right: 5%; font-size: 2.4em; color: #f3b522; text-align: right; background: url(../images/profilebg.jpg) 0 0 no-repeat; background-size: cover;}
+.profile .noreply figure figcaption span{font-size: .3em; display: block;}
+.profile .noreply figure img{width: 100%;}
+
+.profile .noreply .follow{width: 100%; height: 44px; text-align: right; padding-right: 10px;}
+.profile .noreply .follow a{display: inline-block; padding: 5px;}
+.profile .noreply .follow a img{width: 30px;}
+
+/*albums*/
+.album{}
+.album h3{}
+/*swiper*/
+    .swiper-container {
+      width: 94%;
+      height: 100%;}
+    .swiper-wrapper{
+      width: 100%;
+      height: 100%;}
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.swiper-slide:nth-last-child(1){margin-top: 23%; font-size: 13px;}
+.swiper-pagination{}
+.swiper-slide a{}
+.swiper-slide a img{width: 100%;}
+
+/*biography*/
+.biography{}
+.biography h3{}
+.biography p{font-size: .9em; font-family: 'Noto Sans'; padding: 0 5%;}
+.biography p span{display: block; font-weight: bold;}
+
+
+.btn-container02{
+  float: right; margin-right: 5%;
+  width: 70px; height: 40px;
+}
+.btn-container02 button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  background-color: #fff;
+}
+.btn-container02 button i{
+  color: #cccccc; font-size: 13px;}
+
+/*musicVideo*/
+.musicVideo{width: 100%; height: auto;}
+.musicVideo h3{}
+.musicVideo .videoBox{width: 90%; height: auto; margin: 0 5%; overflow: hidden;}
+.musicVideo .videoBox iframe{width: 100%; margin-bottom: 10px;}
+.musicVideo .videoBox a{float: right; height: 35px;}
+.musicVideo .videoBox a i{color: #cccccc; font-size: 13px;}
+
+
+article h3{padding-left: 30px; line-height: 3em;}
+article{width: 100%; padding-bottom: 30px;}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>happy robot records</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div id="Wrap" style="background-color: aquamarine">
+        <header id="headerWrap">
+            <div class="headerInner">
+                <div class="headerBox">
+                    <nav class="menu-opener">
+                        <div class="menu-opener-inner"></div>
+                    </nav>
+                    <nav class="menu">
+                        <ul class="menu-inner">
+                            <a href="#" class="menu-link">
+                                <li>ARTISTS</li>
+                            </a>
+                            <a href="#" class="menu-link">
+                                <li>ALBUMS</li>
+                            </a>
+                            <a href="#" class="menu-link">
+                                <li>NEWS</li>
+                            </a>
+                            <a href="#" class="menu-link">
+                                <li>SCHEDULE</li>
+                            </a>
+                            <a href="#" class="menu-link">
+                                <li>STORE</li>
+                            </a>
+                        </ul>
+                    </nav>
+                    <h1 id="logo">
+                        <a href="../index.html"><span class=hidden>해피로봇레코드 로고</span></a>
+                    </h1>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <script>
+        $(".menu-opener").click(function() {
+            $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+        });
+
+    </script>
+</body>
+</html>
